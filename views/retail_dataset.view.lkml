@@ -145,6 +145,6 @@ view: retail_dataset {
 
   measure: total_profit{
     type: number
-    sql: sum(${TABLE}.price) *  sum(${TABLE}.quantity)* (1-sum(${TABLE}.discount));;
+    sql: sum(${TABLE}.total_price) *  sum(${TABLE}.total_quantity)* (1-sum(${TABLE}.total_discount));;
   }
 }
