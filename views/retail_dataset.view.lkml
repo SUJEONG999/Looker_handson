@@ -149,8 +149,8 @@ view: retail_dataset {
   }
 
   measure: d_customerid {
-    type: number
-    sql: count_distinct(${TABLE}.customerid) ;;
+    type: count_distinct
+    sql: ${TABLE}.customerid ;;
   }
 
 }
