@@ -130,17 +130,17 @@ view: retail_dataset {
 
   measure: total_discount {
     type: number
-    sql: ${TABLE}.discount ;;
+    sql: sum(${TABLE}.discount) ;;
   }
 
   measure: total_price {
     type: number
-    sql: ${TABLE}.price ;;
+    sql: sum(${TABLE}.price) ;;
   }
 
   measure: total_quantity {
     type: number
-    sql: ${TABLE}.quantity ;;
+    sql: sum(${TABLE}.quantity) ;;
   }
 
   measure: total_profit{
