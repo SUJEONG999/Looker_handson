@@ -147,4 +147,10 @@ view: retail_dataset {
     type: number
     sql: sum(${TABLE}.price) *  sum(${TABLE}.quantity) * (1-avg(${TABLE}.discount));;
   }
+
+  measure: d_customerid {
+    type: number
+    sql: count_distinct(${TABLE}.customerid) ;;
+  }
+
 }
