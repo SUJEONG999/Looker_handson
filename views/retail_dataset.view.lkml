@@ -153,4 +153,13 @@ view: retail_dataset {
     sql: ${TABLE}.customerid ;;
   }
 
+  dimension: date_formatted  {
+    type: date
+    datatype: date
+    sql: PARSE_DATE("%Y%m%d", ${TABLE}.orderdate) ;;
+  }
+
+
+
+
 }
