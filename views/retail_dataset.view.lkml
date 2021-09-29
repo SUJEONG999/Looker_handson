@@ -129,11 +129,13 @@ view: retail_dataset {
   ############################################
 
   measure: total_discount {
+    label: "할인금액"
     type: number
     sql: sum(${TABLE}.discount) ;;
   }
 
   measure: total_price {
+    label: "금액"
     type: number
     sql: sum(${TABLE}.price) ;;
   }
