@@ -126,7 +126,8 @@ view: retail_dataset {
     drill_fields: [productname, customername]
   }
 
-  ############################################
+  ################################################
+
 
   measure: total_discount {
     label: "할인금액"
