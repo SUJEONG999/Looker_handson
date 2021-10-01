@@ -10,4 +10,9 @@ datagroup: crystal_test_123_default_datagroup {
 
 persist_with: crystal_test_123_default_datagroup
 
-explore: retail_dataset {}
+explore: retail_dataset {
+  access_filter: {
+    field: retail_dataset.bigcategory
+    user_attribute: bigcategory
+  }
+}
