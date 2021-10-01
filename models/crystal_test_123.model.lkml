@@ -12,7 +12,7 @@ persist_with: crystal_test_123_default_datagroup
 
 explore: retail_dataset {
   access_filter: {
-    field: bigcategory
+    field: retail_dataset.bigcategory
     user_attribute: bigcategory
   }
 }
