@@ -1,7 +1,6 @@
 view: retail_dataset {
   sql_table_name: `Looker_Training.retail_dataset`
-    ;;
-
+;;
   dimension: bigcategory {
     type: string
     sql: ${TABLE}.bigcategory ;;
